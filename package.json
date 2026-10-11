@@ -1,0 +1,23 @@
+{
+  "name": "kpibackend",
+  "version": "1.0.0",
+  "description": "Rest Api and Secure Backend",
+  "keywords": [
+    "Api"
+  ],
+  "homepage": "https://github.com/Gatsinzimeek/Kpi-Backend#readme",
+  "bugs": {
+    "url": "https://github.com/Gatsinzimeek/Kpi-Backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gatsinzimeek/Kpi-Backend.git"
+  },
+  "license": "ISC",
+  "author": "Joshua",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  }
+}
