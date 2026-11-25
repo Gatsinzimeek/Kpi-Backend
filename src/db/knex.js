@@ -2,7 +2,7 @@ import knex from 'knex';
 import pg from 'pg';
 import config from '../../knexfile.js';
 
-// Return DATE columns as 'YYYY-MM-DD' strings (not JS Dates shifted by timezone)
-pg.types.setTypeParser(1082, (v) => v);
+// Return PostgreSQL DATE columns as YYYY-MM-DD strings.
+pg.types.setTypeParser(1082, (value) => value);
 
-export const db = knex(config);
+export const db = knex(config.development);
