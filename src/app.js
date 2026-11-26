@@ -2,6 +2,7 @@
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
+import routes from './routes.js';
 
 import { pool } from './db/pool.js';
 
@@ -33,6 +34,8 @@ app.get('/api/v1/health', async (_req, res, next) => {
     next(error);
   }
 });
+
+app.use('/api/v1', routes);
 
 app.use((req, res) => {
   res.status(404).json({
